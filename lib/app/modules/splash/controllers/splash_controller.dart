@@ -1,23 +1,25 @@
+import 'dart:async';
+
 import 'package:get/get.dart';
 
-class SplashController extends GetxController {
-  //TODO: Implement SplashController
+import '../../../routes/app_pages.dart';
 
-  final count = 0.obs;
+class SplashController extends GetxController {
+  navigate() {
+    Timer(const Duration(milliseconds: 2000), () {
+      // final status = GetStorage().read('login_status') ?? false;
+      // if (status) {
+      //   Get.offNamed(Routes.HOME);
+      // } else {
+      //   Get.offNamed(Routes.LOGIN);
+      // }
+      Get.offNamed(Routes.HOME);
+    });
+  }
+
   @override
   void onInit() {
+    navigate();
     super.onInit();
   }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {
-    super.onClose();
-  }
-
-  void increment() => count.value++;
 }
