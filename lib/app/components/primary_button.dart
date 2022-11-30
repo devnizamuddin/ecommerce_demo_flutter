@@ -1,3 +1,4 @@
+import 'package:ecommerce_demo_flutter/app/config/app_themes.dart';
 import 'package:flutter/material.dart';
 
 class PrimaryButton extends StatelessWidget {
@@ -11,7 +12,7 @@ class PrimaryButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      style: ElevatedButton.styleFrom(primary: Colors.red),
+      style: ElevatedButton.styleFrom(primary: AppThemes.PrimaryDarkColor),
       onPressed: onClick,
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 10),
