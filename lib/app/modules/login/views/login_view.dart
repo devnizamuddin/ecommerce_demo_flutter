@@ -36,7 +36,9 @@ class LoginView extends GetView<LoginController> {
                 label: 'Password', validationText: 'Enter your Password'),
             const SizedBox(height: 20),
             PrimaryButton(
-              onClick: () {},
+              onClick: () {
+                controller.onTapLogin();
+              },
               text: 'LOGIN',
             )
           ],
