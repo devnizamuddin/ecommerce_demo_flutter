@@ -13,13 +13,7 @@ class SplashController extends GetxController {
       // } else {
       //   Get.offNamed(Routes.LOGIN);
       // }
-      Get.offNamed(Routes.HOME);
+      Get.offNamed(Routes.LOGIN);
     });
-  }
-
-  @override
-  void onInit() {
-    navigate();
-    super.onInit();
   }
 }

@@ -10,6 +10,7 @@ class SplashView extends GetView<SplashController> {
   const SplashView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    controller.navigate();
     return Scaffold(
       body: SafeArea(
           child: Container(
