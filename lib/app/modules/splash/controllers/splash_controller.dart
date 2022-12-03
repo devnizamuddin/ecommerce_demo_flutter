@@ -13,7 +13,7 @@ class SplashController extends GetxController {
       // } else {
       //   Get.offNamed(Routes.LOGIN);
       // }
-      Get.offNamed(Routes.LOGIN);
+      Get.offNamed(Routes.CART);
     });
   }
 }
