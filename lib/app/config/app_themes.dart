@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 
 class AppThemes {
   static const Color PrimaryColor = Color.fromARGB(255, 88, 64, 226);
+  static const Color PrimaryLightColor = Color.fromARGB(255, 194, 230, 254);
   static const Color PrimaryDarkColor = Color.fromARGB(255, 72, 52, 187);
   static const Color AccentColor = Color(0xffF1C40F);
   static const Color bgColor = Color(0xFFE9EBF0);
