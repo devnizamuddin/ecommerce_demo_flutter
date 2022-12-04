@@ -4,6 +4,6 @@ import 'package:get/get.dart';
 
 class LoginController extends GetxController {
   onTapLogin() {
-    Get.toNamed(Routes.HOME);
+    Get.toNamed(Routes.INDEX);
   }
 }
