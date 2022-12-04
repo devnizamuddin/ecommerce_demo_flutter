@@ -20,6 +20,7 @@ class LoginView extends GetView<LoginController> {
           child: Column(
             children: [
               LoginTopBar(),
+              const SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Column(
@@ -30,7 +31,7 @@ class LoginView extends GetView<LoginController> {
                       AppAssets.ASSET_APP_REMARK_LOGO,
                       height: 96,
                     ),
-                    const SizedBox(height: 32),
+                    const SizedBox(height: 16),
                     const Text(
                       'You can buy anything from here.',
                       textAlign: TextAlign.center,

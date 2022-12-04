@@ -7,7 +7,7 @@ Widget LoginTopBar() {
     painter: MyCustomPainter(),
     child: Container(
       width: double.maxFinite,
-      height: 160,
+      height: 128,
       child: const Padding(
         padding: EdgeInsets.only(top: 32.0),
       ),
