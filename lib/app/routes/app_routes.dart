@@ -9,6 +9,7 @@ abstract class Routes {
   static const CART = _Paths.CART;
   static const INDEX = _Paths.INDEX;
   static const SERVICES = _Paths.SERVICES;
+  static const ACCOUNT = _Paths.ACCOUNT;
 }
 
 abstract class _Paths {
@@ -19,4 +20,5 @@ abstract class _Paths {
   static const CART = '/cart';
   static const INDEX = '/index';
   static const SERVICES = '/services';
+  static const ACCOUNT = '/account';
 }
