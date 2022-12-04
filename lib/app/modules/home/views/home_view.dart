@@ -23,9 +23,10 @@ class HomeView extends GetView<HomeController> {
                       contentPadding: EdgeInsets.only(left: 16),
                       hintText: 'Search Customer',
                       border: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                          borderSide:
-                              BorderSide(color: Colors.black, width: 4))),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(32.0),
+                        ),
+                      )),
                   style: TextStyle(color: Colors.black),
                 ),
                 const SizedBox(height: 20),
@@ -65,7 +66,7 @@ class HomeView extends GetView<HomeController> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Image.asset(
-                                  AppAssets.ASSET_BOTTLE_ICON,
+                                  AppAssets.ASSET_BOTTLE_IMAGE,
                                   height: 64,
                                   width: 32,
                                   fit: BoxFit.fitHeight,
@@ -127,7 +128,7 @@ class HomeView extends GetView<HomeController> {
                           elevation: 4,
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Image.asset(AppAssets.ASSET_BRAND_ICON),
+                            child: Image.asset(AppAssets.ASSET_BRAND_IMAGE),
                           ));
                     },
                   ),
@@ -159,10 +160,10 @@ class HomeView extends GetView<HomeController> {
                                 style: const TextStyle(fontSize: 24),
                               ),
                               Image.asset(
-                                menu.image ?? AppAssets.ASSET_EMPTY_ICON,
+                                menu.image ?? AppAssets.ASSET_EMPTY_IMAGE,
                                 errorBuilder: (context, error, stackTrace) {
                                   return Image.asset(
-                                    AppAssets.ASSET_BRAND_ICON,
+                                    AppAssets.ASSET_BRAND_IMAGE,
                                     height: 40,
                                   );
                                 },

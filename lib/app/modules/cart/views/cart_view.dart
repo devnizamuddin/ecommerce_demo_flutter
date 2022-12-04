@@ -122,7 +122,7 @@ class CartView extends GetView<CartController> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Image.asset(
-                                  AppAssets.ASSET_APP_LOGO,
+                                  AppAssets.ASSET_BEAUTY_PRODUCT_IMAGE,
                                   height: 96,
                                 ),
                                 const SizedBox(height: 10),
@@ -220,7 +220,7 @@ class CartView extends GetView<CartController> {
                                               Color.fromARGB(255, 0, 185, 246),
                                           fontWeight: FontWeight.bold),
                                     ),
-                                    Text(
+                                    const Text(
                                       ' & ',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold),
