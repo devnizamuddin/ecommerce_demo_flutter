@@ -12,8 +12,15 @@ class CartView extends GetView<CartController> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.white,
           elevation: 0,
-          title: const Text('CartView'),
+          title: const Text(
+            'Cart',
+            style: TextStyle(
+                color: Colors.black,
+                letterSpacing: 1,
+                fontWeight: FontWeight.bold),
+          ),
           centerTitle: true,
         ),
         body: Column(
@@ -81,14 +88,18 @@ class CartView extends GetView<CartController> {
                         ),
                       ],
                     ),
+                    const SizedBox(height: 5),
                     TextButton(
                       onPressed: () {},
                       style: TextButton.styleFrom(
                           foregroundColor: Colors.white,
                           backgroundColor: Colors.yellow[700]),
-                      child: const Text(
-                        'Proceed to checkout',
-                        style: TextStyle(color: Colors.white),
+                      child: const Padding(
+                        padding: EdgeInsets.all(4.0),
+                        child: Text(
+                          'Proceed to checkout',
+                          style: TextStyle(color: Colors.white),
+                        ),
                       ),
                     )
                   ],
@@ -155,10 +166,73 @@ class CartView extends GetView<CartController> {
                               children: [
                                 const Text(
                                     'SHCKE Bubble Machine 69 Holes Rocket Launcher Bubble Machine...'),
-                                const Text('29 99'),
-                                const Text(
+                                RichText(
+                                  text: TextSpan(
+                                    style: const TextStyle(
+                                        color: Colors.red, fontSize: 16),
+                                    children: [
+                                      WidgetSpan(
+                                        child: Transform.translate(
+                                          offset: const Offset(0.0, -7.0),
+                                          child: const Text(
+                                            '\$',
+                                            style: TextStyle(
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                        ),
+                                      ),
+                                      const TextSpan(
+                                        text: '29',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                      WidgetSpan(
+                                        child: Transform.translate(
+                                          offset: const Offset(0.0, -7.0),
+                                          child: const Text(
+                                            '99',
+                                            style: TextStyle(
+                                                fontSize: 12,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Text(
                                   'Exclucive Prime Price',
-                                  style: TextStyle(color: Colors.grey),
+                                  style: TextStyle(color: Colors.grey[700]),
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.done,
+                                      color: Colors.yellow[800],
+                                    ),
+                                    const Text(
+                                      'prime',
+                                      style: TextStyle(
+                                          color:
+                                              Color.fromARGB(255, 0, 185, 246),
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    Text(
+                                      ' & ',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    const Text(
+                                      'FREE RETURNS',
+                                      style: TextStyle(
+                                          color:
+                                              Color.fromARGB(255, 0, 185, 246),
+                                          fontWeight: FontWeight.bold),
+                                    )
+                                  ],
                                 ),
                                 const Text('In Stock',
                                     style: TextStyle(color: Colors.green)),
