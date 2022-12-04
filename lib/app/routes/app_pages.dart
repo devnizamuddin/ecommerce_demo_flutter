@@ -8,6 +8,8 @@ import '../modules/index/bindings/index_binding.dart';
 import '../modules/index/views/index_view.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
+import '../modules/services/bindings/services_binding.dart';
+import '../modules/services/views/services_view.dart';
 import '../modules/splash/bindings/splash_binding.dart';
 import '../modules/splash/views/splash_view.dart';
 
@@ -43,6 +45,11 @@ class AppPages {
       name: _Paths.INDEX,
       page: () => const IndexView(),
       binding: IndexBinding(),
+    ),
+    GetPage(
+      name: _Paths.SERVICES,
+      page: () => const ServicesView(),
+      binding: ServicesBinding(),
     ),
   ];
 }
