@@ -1,7 +1,7 @@
-import 'package:ecommerce_demo_flutter/app/modules/account/views/account_view.dart';
-import 'package:ecommerce_demo_flutter/app/modules/cart/views/cart_view.dart';
-import 'package:ecommerce_demo_flutter/app/modules/home/views/home_view.dart';
-import 'package:ecommerce_demo_flutter/app/modules/services/views/services_view.dart';
+import '../../account/views/account_view.dart';
+import '../../cart/views/cart_view.dart';
+import '../../home/views/home_view.dart';
+import '../../services/views/services_view.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';

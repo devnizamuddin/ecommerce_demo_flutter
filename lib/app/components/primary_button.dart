@@ -1,4 +1,4 @@
-import 'package:ecommerce_demo_flutter/app/config/app_themes.dart';
+import '../config/app_themes.dart';
 import 'package:flutter/material.dart';
 
 class PrimaryButton extends StatelessWidget {

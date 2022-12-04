@@ -13,7 +13,7 @@ class ServicesView extends GetView<ServicesController> {
         title: const Text('ServicesView'),
         centerTitle: true,
       ),
-      body: Center(
+      body: const Center(
         child: Text(
           'ServicesView is working',
           style: TextStyle(fontSize: 20),

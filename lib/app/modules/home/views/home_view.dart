@@ -1,6 +1,6 @@
-import 'package:ecommerce_demo_flutter/app/config/app_assets.dart';
-import 'package:ecommerce_demo_flutter/app/data/menus.dart';
-import 'package:ecommerce_demo_flutter/app/models/menu.dart';
+import '../../../config/app_assets.dart';
+import '../../../data/menus.dart';
+import '../../../models/menu.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';

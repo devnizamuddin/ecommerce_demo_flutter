@@ -1,14 +1,14 @@
-import 'package:ecommerce_demo_flutter/app/config/app_themes.dart';
+import '../config/app_themes.dart';
 import 'package:flutter/material.dart';
 
 // ignore: non_constant_identifier_names
 Widget LoginTopBar() {
   return CustomPaint(
     painter: MyCustomPainter(),
-    child: Container(
+    child: const SizedBox(
       width: double.maxFinite,
       height: 128,
-      child: const Padding(
+      child: Padding(
         padding: EdgeInsets.only(top: 32.0),
       ),
     ),

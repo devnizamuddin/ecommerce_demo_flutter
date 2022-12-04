@@ -13,7 +13,7 @@ class AccountView extends GetView<AccountController> {
         title: const Text('AccountView'),
         centerTitle: true,
       ),
-      body: Center(
+      body: const Center(
         child: Text(
           'AccountView is working',
           style: TextStyle(fontSize: 20),

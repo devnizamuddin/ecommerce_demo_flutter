@@ -1,5 +1,5 @@
-import 'package:ecommerce_demo_flutter/app/config/app_assets.dart';
-import 'package:ecommerce_demo_flutter/app/models/menu.dart';
+import '../config/app_assets.dart';
+import '../models/menu.dart';
 import 'package:flutter/material.dart';
 
 var menus = [

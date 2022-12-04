@@ -1,5 +1,5 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:ecommerce_demo_flutter/app/config/app_assets.dart';
+import '../../../config/app_assets.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -29,7 +29,7 @@ class SplashView extends GetView<SplashController> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Image.asset(
-              AppAssets.ASSET_APP_LOGO,
+              AppAssets.ASSET_APP_REMARK_LOGO,
               height: 80,
             ),
             const SizedBox(height: 10),
