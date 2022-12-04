@@ -52,7 +52,7 @@ class HomeView extends GetView<HomeController> {
                           : context.isSmallTablet
                               ? 3
                               : 4,
-                      childAspectRatio: 4 / 2,
+                      childAspectRatio: 4 / 2.5,
                       mainAxisSpacing: 5,
                       crossAxisSpacing: 5,
                     ),
