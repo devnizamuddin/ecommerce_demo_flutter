@@ -15,8 +15,10 @@ class IndexView extends GetView<IndexController> {
   Widget build(BuildContext context) {
     return Scaffold(
         bottomNavigationBar: Obx(() => BottomNavigationBar(
-              selectedItemColor: AppThemes.PrimaryDarkColor,
-              unselectedItemColor: AppThemes.PrimaryColor,
+              type: BottomNavigationBarType.fixed,
+              backgroundColor: AppThemes.PrimaryColor,
+              unselectedItemColor: Colors.grey[400],
+              selectedItemColor: Colors.white,
               showUnselectedLabels: true,
               currentIndex: controller.currentIndex.value,
               onTap: (value) {
