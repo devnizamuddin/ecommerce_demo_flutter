@@ -24,7 +24,7 @@ class CustomTextField extends StatelessWidget {
           color: suffixIconColor,
         ),
         label: Text(label ?? ''),
-        contentPadding: const EdgeInsets.fromLTRB(10, 5, 10, 5),
+        contentPadding: const EdgeInsets.fromLTRB(10, 20, 20, 10),
         enabledBorder: const OutlineInputBorder(
           borderSide: BorderSide(width: 1, color: Colors.grey),
         ),
